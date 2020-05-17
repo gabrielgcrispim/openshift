@@ -9,6 +9,11 @@ app.get('/', function(req,resp){
 })
 
 
+app.get('/newbranch', function(req,resp){
+    resp.send('That is new bracnh');
+})
+
+
 
 
 app.listen(8080,function(){
