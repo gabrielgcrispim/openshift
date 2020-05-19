@@ -13,7 +13,9 @@ app.get('/newbranch', function(req,resp){
     resp.send('That is new branch');
 })
 
-
+app.get('/mars', function(req,resp){
+    resp.send('Hello, Mars !!!!!!!!');
+})
 
 
 app.listen(8080,function(){
