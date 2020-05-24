@@ -18,6 +18,11 @@ app.get('/mars', function(req,resp){
 })
 
 
+app.get('/name/:name', function(req,resp){
+    name = req.params.name
+    resp.send('My name is' + name);
+})
+
 app.listen(8080,function(){
     console.log("Listening on port 8080 !!!!!!")
 });
